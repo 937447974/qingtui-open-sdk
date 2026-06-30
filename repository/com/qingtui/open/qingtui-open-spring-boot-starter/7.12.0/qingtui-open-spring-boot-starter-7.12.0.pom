@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.qingtui.platform</groupId>
+        <artifactId>api-dependency</artifactId>
+        <version>1.1.0</version>
+        <relativePath/>
+    </parent>
+
+    <groupId>com.qingtui.open</groupId>
+    <artifactId>qingtui-open-spring-boot-starter</artifactId>
+    <name>qingtui-open-spring-boot-starter</name>
+    <version>7.12.0</version>
+
+    <!-- 发布中央仓库的配置文件 -->
+    <url>https://www.qingtui.com</url>
+    <description>赛迪信息轻推开放平台</description>
+    <inceptionYear>2022</inceptionYear>
+    <developers>
+        <developer>
+            <id>Jun.D.Yang</id>
+            <name>阳君</name>
+            <email>Jun.D.Yang@cisdi.com.cn</email>
+            <organization>CISDI</organization>
+            <organizationUrl>https://www.qingtui.com</organizationUrl>
+        </developer>
+    </developers>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+    <scm>
+        <url>https://www.qingtui.com/devdoc/</url>
+        <connection>https://www.qingtui.com/devdoc/</connection>
+        <developerConnection>https://www.qingtui.com/devdoc/</developerConnection>
+    </scm>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.qingtui.open</groupId>
+            <artifactId>qingtui-open</artifactId>
+            <version>7.12.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>${spring.boot.version}</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot</artifactId>
+            <version>${spring.boot.version}</version>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+
+</project>

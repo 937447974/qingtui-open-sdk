@@ -1,0 +1,76 @@
+<project
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+        xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <parent>
+        <groupId>com.qingtui.platform</groupId>
+        <artifactId>api-dependency</artifactId>
+        <version>1.1.0</version>
+        <relativePath/>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.qingtui.open</groupId>
+    <artifactId>qingtui-open</artifactId>
+    <name>qingtui-open</name>
+    <version>7.12.0</version>
+
+    <!-- 发布中央仓库的配置文件 -->
+    <url>https://www.qingtui.com</url>
+    <description>赛迪信息轻推开放平台</description>
+    <inceptionYear>2022</inceptionYear>
+    <developers>
+        <developer>
+            <id>Jun.D.Yang</id>
+            <name>阳君</name>
+            <email>Jun.D.Yang@cisdi.com.cn</email>
+            <organization>CISDI</organization>
+            <organizationUrl>https://www.qingtui.com</organizationUrl>
+        </developer>
+    </developers>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+    <scm>
+        <url>https://www.qingtui.com/devdoc/</url>
+        <connection>https://www.qingtui.com/devdoc/</connection>
+        <developerConnection>https://www.qingtui.com/devdoc/</developerConnection>
+    </scm>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.dtflys.forest</groupId>
+            <artifactId>forest-core</artifactId>
+            <version>1.5.35</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>2.0.1.Final</version>
+            <optional>true</optional>
+        </dependency>
+        <!-- test-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-logging</artifactId>
+            <version>2.7.13</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>
+
